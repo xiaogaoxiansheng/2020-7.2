@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4421096",
+      "name": "wifi",
+      "font_class": "wifi",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4700187",
+      "name": "左箭头",
+      "font_class": "zuojiantou1",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "9521668",
+      "name": "个人中心",
+      "font_class": "ren",
+      "unicode": "e50e",
+      "unicode_decimal": 58638
+    },
+    {
+      "icon_id": "9880866",
+      "name": "搜索--1",
+      "font_class": "sousuo",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "11559043",
+      "name": "问",
+      "font_class": "wen",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    }
+  ]
+}

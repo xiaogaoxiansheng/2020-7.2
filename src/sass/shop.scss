@@ -1,0 +1,107 @@
+*{margin: 0;padding: 0;font-style: normal;}
+body{
+  position: relative;
+}
+.card{
+  overflow:hidden;
+  
+}
+
+ .mt-5{
+  margin-top: 0;
+}
+.card-column{
+  width: 1260px;
+  padding: 0px 30px 0px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  .card-reveal{
+    width: 394px;
+    margin: 0 4px;
+  }
+  img{
+    width: 396px;
+  }
+}
+
+.card-body_one{
+  margin: 9.5px 0;
+  height: 30px;
+  line-height: 26px;
+  font-size: 12px;
+  
+  
+}
+.card-body_two{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.card-body_one .right{
+  float: right;
+  width: 40%;
+  text-align: right;
+  line-height: 26px;
+  padding-right: 50px;
+  i{
+    z-index:1;
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: red;
+    line-height: 20px;
+    
+  }
+}
+.card-body_one span:nth-child(1){
+    font-size: 16px;
+    font-weight: bold;
+}
+.card-body_one span:nth-child(2){
+  font-size: 12px;
+  line-height: 26px;
+  padding: 0px 6px;
+  background-color: #A94442;
+  color: #ffffff;
+  
+}
+.card-reveal .card-body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+}
+.card-reveal .card-body{
+    color: #4d4d4d;
+}
+
+.shop-img{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 12;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  img{
+    width: 100%;
+    // cursor: pointer;
+  }
+  b{
+    display: inline-block;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    left: 35px;
+    color: #fff;
+    font-size: 12px;
+    // cursor: pointer;
+  }
+}

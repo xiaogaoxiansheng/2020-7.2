@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  position: fixed;
+  z-index: 9;
+  width: 1200px;
+  height: 350px;
+  margin: -450px auto;
+  padding-top: 100px;
+  margin-left: 60px;
+}
+.app-location h2 {
+  width: 313px;
+  color: #000;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+.app-location {
+  background-color: #fff;
+  width: 315px;
+  height: 350px;
+  margin: 0 450px;
+  text-align: center;
+  border: 1px solid #ccc;
+    #full{
+        cursor: pointer;
+    }
+    form{
+      span{
+        position: absolute;
+        padding: 4px 4px;
+        color: red;
+        top: -40px;
+        left: 30px;
+        opacity:0;
+      }
+      .error-2{
+        left:44px;
+      }
+      .error-3{
+        left:42px;
+      }
+
+    }
+}
+.location {
+  padding: 1em 0;
+}
+.line {
+  position: relative;
+}
+.line span {
+  position: absolute;
+  top: 10%;
+  left: 39%;
+  background: #5b5c61;
+  height: 1px;
+  width: 20%;
+}
+form {
+  padding: 0% 1%;
+  position: relative;
+  img {
+    left: 50px;
+    position: absolute;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  .two {
+    top: 68px;
+  }
+}
+.location img {
+  margin: 2em 0;
+}
+.app-location input[type="text"],
+.app-location input[type="password"] {
+  width: 228px;
+  height: 43px;
+  color: #ccc;
+  padding: 1.1em 10px 1.1em 40px;
+  border: 1px solid #000;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.submit {
+  margin: 1em 0 1em 2px;
+}
+.app-location input[type="submit"] {
+  width: 228px;
+  height: 43px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #8b6fa9;
+  background: #8b6fa9;
+  border-radius: 0.3em;
+}
+
+.new {
+  margin-left: 40px;
+  margin-top: -10px;
+  width: 228px;
+}
+.new h3 {
+  float: left;
+}
+.new h3 a,
+.new h4 a {
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+}
+.new h3 a:hover,
+.new h4 a:hover {
+  text-decoration: underline;
+}
+.new h4 {
+  float: right;
+}

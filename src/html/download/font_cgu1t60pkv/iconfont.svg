@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="fangdajing" unicode="&#58883;" d="M1001.586554-105.567913a72.831451 72.831451 0 0 0-102.983671 0l-204.656377 204.656376a439.173648 439.173648 0 1 0 102.983672 102.983671l204.656376-204.656376a72.831451 72.831451 0 0 0 0-102.983671zM441.367035 745.977408a291.325803 291.325803 0 1 1 291.325803-291.325803 291.325803 291.325803 0 0 1-291.325803 291.325803z"  horiz-adv-x="1027" />
+
+    
+    <glyph glyph-name="cuowu" unicode="&#58946;" d="M513.152 467.328l241.3568 241.3568a59.7248 59.7248 0 1 0 84.48-84.48l-241.3824-241.3568 241.3568-241.3568a59.7248 59.7248 0 1 0-84.48-84.48l-241.3312 241.3824-241.3824-241.3568a59.7248 59.7248 0 1 0-84.48 84.48l241.3824 241.3312-241.3568 241.3824a59.7248 59.7248 0 1 0 84.48 84.48l241.3568-241.3824z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

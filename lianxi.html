@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 这里images文件夹里图片的个数为7，代码如下 -->
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		#bannerBox{
+			/*overflow: hidden;*/
+			height: 427px;/* 需改成一个图片的高度 */
+			position: relative;
+		}
+		#banner{
+			position: absolute;
+			height: 427px;/* 需改成一个图片的高度 */
+			width: 1920px;/* 需改成一个图片的宽度 */
+			left: 50%;
+			margin-left: -960px;/* 需改成一个图片的kuandu的一半 */
+		}
+		#banner #list{
+			width: 15360px;/* 图片的个数加1，然后乘于一个图片的宽度 */
+			position: absolute;
+		}
+		#banner #list li,#banner #buttons li{
+			float: left;
+		}
+		#banner #buttons{
+			position: absolute;
+			left: 50%;
+			bottom: 10px;
+			margin-left: -133px;
+		}
+		#banner #buttons li{
+			width: 12px;
+			height: 12px;
+			border: 3px solid #fff;
+			border-radius: 9px;
+			background: transparent;
+			margin: 0 10px;
+		}
+		#banner #buttons .on{
+			background: #000;
+		}
+	</style>
+	<script>
+        var timerId = null;
+        var timerAuto = null;
+        var n = 0;
+        function $(id){
+            return document.getElementById(id);
+        }
+        function animate(obj, target){
+            clearInterval(timerId);
+            timerId = setInterval(function(){
+                var leader = obj.offsetLeft;
+                var step = (target - leader) / 5;
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                leader = leader + step;
+                obj.style.left = leader + 'px';
+            }, 10);
+        }
+        window.onload = function(){
+            var buttons = $('buttons').getElementsByTagName('li');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function(){
+                    for (var i = 0; i < buttons.length; i++) {
+                        buttons[i].classList.remove('on');
+                        if (buttons[i] == this) {
+                            n = i;
+                            var tgt = - i * 1920;   /*1920需改成一个图片的宽度*/
+                            animate($('list'), tgt);
+                        }
+                    }
+                    this.classList.add('on');
+                }
+            }
+            function moveAuto(){
+            	if (n == 7) {   /*7需改成图片的个数*/
+                    $('list').style.left = 0 + 'px';
+                    n = 0;
+                }
+                n++;
+                var tgt = - n *1920;   /*1920需改成图片的宽度*/
+                animate($('list'), tgt);
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].classList.remove('on');
+                }
+                if (n == 7) { /*7需改成图片的个数*/
+                    buttons[0].classList.add('on');
+                } else {
+                    buttons[n].classList.add('on');
+                }
+            }
+            timerAuto = setInterval(moveAuto, 2000);
+            $('bannerBox').onmouseover = function(){
+                clearInterval(timerAuto);
+            }
+            $('bannerBox').onmouseout = function(){
+            	clearInterval(timerAuto);
+                timerAuto = setInterval(moveAuto, 2000);
+            }
+        }
+    </script>
+</head>
+<body>
+	<div id="bannerBox">
+		<div id="banner">
+			<ul id="list">
+				<li><img src="../2002-cli/src/imgs/01.jpg" alt=""></li>
+				<li><img src="../2002-cli/src/imgs/01.jpg" alt=""></li>
+				<li><img src="../2002-cli/src/imgs/01.jpg" alt=""></li>
+				<li><img src="../2002-cli/src/imgs/01.jpg" alt=""></li>
+				<li><img src="../2002-cli/src/imgs/01.jpg" alt=""></li>
+				<li><img src="../2002-cli/src/imgs/01.jpg" alt=""></li>
+				<li><img src="../2002-cli/src/imgs/01.jpg" alt=""></li>
+				<li><img src="../2002-cli/src/imgs/01.jpg" alt=""></li>
+			</ul>
+			<ul id="buttons">
+				<li class="on"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

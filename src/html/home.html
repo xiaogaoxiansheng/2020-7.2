@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/iconfont.css">
+<link rel="stylesheet" href="../css/iconfont-1.css">
+<link rel="stylesheet" href="../css/lb.css">
+<link rel="stylesheet" href="../css/iconfont-2.css">
+<link href="../css/login.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- <div style="right: 90px;"></div> -->
+
+  <div class="box">
+    <div class="app-location">
+      <a id="full" style="font-size: 30px;text-decoration: none;position: absolute;right: 446px;">×</a>
+      <h2>用户登录</h2>
+      <div class="line"></div>
+      <div class="location"></div>
+      <form>
+        <img src="../imgs/icon_user.png" alt="" />
+        <img class="two" src="../imgs/icon_password.png" alt="" />
+
+        <span class="error-1">用户名为字母加数字或十一位手机号！</span>
+        <span class="error-2">密码为最多十六位字母加数字！</span>
+        <span class="error-3">请先输入正确的用户名或手机号</span>
+
+        <input
+          id="text"
+          type="text"
+          class="text"
+          value="用户名/手机号"
+          onfocus="this.value = '';"
+          onblur="if (this.value == '') {this.value = '用户名/手机号';}"
+        />
+        <input
+          id="password"
+          type="text"
+          value="密码"
+          onfocus="this.value = '',this.type='password';"
+          onblur="if (this.value == '') {this.value = '密码',this.type='text';}"
+        />
+        <div class="submit"><input type="submit" value="登录" /></div>
+        <div class="clear"></div>
+        <div class="new">
+          <h3><a href="#">忘记密码</a></h3>
+          <h4><a href="#">用户注册</a></h4>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <div class="header">
+        <div>
+            <a href="#"><img src="../imgs/04.png"></a>
+            <ul>
+                <li class="arise">产品
+                  <div class="show">
+                    <p>钢琴</p>
+                    <p>爵士鼓</p>
+                    <p>打击乐器</p>
+                    <p>专业音响</p>
+                    <p>电子键盘</p>
+                    <p>管乐器</p>
+                    <p>音乐制作产品</p>
+                    <p>半导体/网络会议产品</p>
+                    <p>吉他</p>
+                    <p>弦乐器</p>
+                    <p>家庭音响</p>
+                    <p>App应用程序</p>
+                  </div>
+                </li>
+                <li>音乐服务</li>
+                <li>新闻活动</li>
+                <li>经销商查询</li>
+                <li>客户服务</li>
+                <li>企业用户</li>
+                <li>关于雅马哈</li>
+            </ul>
+            <div class="right">
+                <li class="purple"><span class="iconfont icon-ren" id="ren"></span></li>
+                <li><span class="iconfont icon-sousuo" id="sousuo"></span></li>
+            </div>
+        </div>
+    </div>
+
+    <div class=" search">
+        <input type="text" class="ipt">
+        <span class="iconfont icon-fangdajing" id="btn"></span>
+    </div>
+
+    <div class="slideshow">
+        <div class="lb-box" id="lb-1">
+            <!-- 轮播内容 -->
+            <div class="lb-content">
+              <div class="lb-item active">
+                <a href="#">
+                  <img src="../imgs/01.jpg" alt="picture loss">
+                </a>
+              </div>
+              <div class="lb-item">
+                <a href="#">
+                  <img src="../imgs/02.jpg" alt="picture loss">
+                </a>
+              </div>
+              <div class="lb-item">
+                <a href="#">
+                  <img src="../imgs/01.jpg" alt="picture loss">
+                </a>
+              </div>
+              <div class="lb-item">
+                <a href="#">
+                  <img src="../imgs/02.jpg" alt="picture loss">
+                </a>
+              </div>   
+              <div class="lb-item">
+                <a href="#">
+                  <img src="../imgs/01.jpg" alt="picture loss">
+                </a>
+              </div>
+              <div class="lb-item">
+                <a href="#">
+                  <img src="../imgs/02.jpg" alt="picture loss">
+                </a>
+              </div>
+            </div>
+            <!-- 轮播标志 -->
+            <ol class="lb-sign">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <!-- 轮播控件 -->
+            <div class="lb-ctrl left">＜</div>
+            <div class="lb-ctrl right">＞</div>
+            </div>
+            
+            <!-- <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
+            <p>适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。</p>
+            <p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+            </div> -->
+    </div>
+
+    <h2>产品</h1>
+
+    <ul class="product clear_fix">
+        <li><span>钢琴</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>爵士鼓</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>打击乐器</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>专业音响</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>电子键盘</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>管乐器</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>音乐制作产品</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>半导体/网络会议产品</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>吉他</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>弦乐器</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>家庭音响</span><img src="../imgs/03.jpg" alt=""></li>
+        <li><span>App应用程序</span><img src="../imgs/03.jpg" alt=""></li>
+    </ul>
+    
+
+    <h2>重点推荐</h1>
+    
+    <ul class="recommend clear_fix">
+        <li>
+            <img src="../imgs/05.jpg" alt="">
+            <h1>经销商查询</h1>
+            <h2>雅马哈授权经销商查询</h2>
+        </li>
+        <li>
+            <img src="../imgs/05.jpg" alt="">
+            <h1>会员系统</h1>
+            <h2>注册雅马哈会员,申请调律、维修、保养服务,订阅会员
+                周刊</h2>
+        </li>
+        <li>
+            <img src="../imgs/05.jpg" alt="">
+            <h1>社交媒体</h1>
+            <h2>更多内容,都在雅马哈官方微信、微博、ilbili账号</h2>
+        </li>
+        <li>
+            <img src="../imgs/05.jpg" alt="">
+            <h1>音乐服务</h1>
+            <h2>雅马哈音乐中心、流行音乐课程、电子键盘星教室</h2>
+        </li>
+        <li>
+            <img src="../imgs/05.jpg" alt="">
+            <h1>加入我们</h1>
+            <h2>获取雅马哈招聘信息</h2>
+        </li>
+        <li>
+            <img src="../imgs/05.jpg" alt="">
+            <h1>联系我们</h1>
+            <h2>雅马哈乐器、家庭音响、音乐制作、专业音响、音乐中心</h2>
+        </li>
+    </ul>
+    
+
+    <div class="foot">
+        <ul>
+            <li>
+                <h6><a href="#">产品</a></h6>
+                <a href="#">钢琴</a>
+                <a href="#">电子键盘</a>
+                <a href="#">吉他</a>
+                <a href="#">爵土鼓</a>
+                <a href="#">管乐器</a>
+                <a href="#">弦乐器</a>
+                <a href="#">打击乐器</a>
+                <a href="#">音乐制作产品</a>
+                <a href="#">家庭音响</a>
+                <a href="#">专业音响</a>
+                <a href="#">半导体网络会议产品</a>
+                <a href="#">App应用程序</a>
+            </li>
+            <li>
+                <h6><a href="#">音乐服务</a></h6>
+                <a href="#">雅马哈音乐中心</a>
+                <a href="#">雅马哈流行音乐课程</a>
+                <a href="#">雅马哈双排键电子琴教师俱乐部</a>
+                <a href="#">雅马哈电子健盘专用教室</a>
+                <h6 class="top"><a href="#">新闻活动</a></h6>
+                <a href="#">新闻活动首页</a>
+                <h6 class="top"><a href="#">经销商查询</a></h6>
+                <a href="#">经销商查询首页</a>
+            </li>
+            <li>
+                <h6><a href="#">客户支持</a></h6>
+                <a href="#">常见问题( Q&A)</a>
+                <a href="#">维修站查询</a>
+                <a href="#">雅马哈会员系统</a>
+                <a href="#">雅马哈认定技师</a>
+                <a href="#">下载与支持</a>
+                <a href="#">经销商专区</a>
+                <a href="#">电音维修站专区</a>
+            </li>
+            <li>
+                <h6><a href="#">关于雅马哈</a></h6>
+                <a href="#">雅马哈集团</a>
+                <a href="#">雅马哈中国</a>
+            </li>
+        </ul>
+    </div>
+    <a href="#"><h1 class="h1">Global</h1></a>
+
+    <div class="last">
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">在线招聘</a></span>
+        <span><a href="#">使用条款</a></span>
+        <span><a href="#">隐私条款</a></span>
+        <p>
+            <span>CopyrightO 2017雅马哈乐器音响(中国)投资有限公司版权所有</span>
+            <span><a href="#">沪ICP备05040406号</a><a href="#"><img src="../imgs/pd.png"></a><a href="#">沪公网安备31010602003422号</a></span>
+        </p>
+    </div>
+
+    
+
+    <script src="../script/lb.js"></script>
+    <script src="../script/home.js"></script>
+    <script src="../script/jquery.1.4.2-min.js"></script>
+    <script src="../script/scrolltopcontrol.js"></script>
+    <script>
+        window.onload = function () {
+          // 轮播选项
+          const options = {
+            id: 'lb-1',              // 轮播盒ID
+            speed: 600,              // 轮播速度(ms)
+            delay: 3000,             // 轮播延迟(ms)
+            direction: 'left',       // 图片滑动方向
+            moniterKeyEvent: true,   // 是否监听键盘事件
+            moniterTouchEvent: true  // 是否监听屏幕滑动事件
+          }
+          const lb = new Lb(options);
+          lb.start();
+        }
+    
+        
+    </script>
+</body>
+</html>

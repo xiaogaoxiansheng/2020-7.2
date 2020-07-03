@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChinaZ</title>
+    <link href="../css/login.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="App Loction Form,Login Forms,Sign up Forms,Registration Forms,News latter Forms,Elements"
+      .
+    />
+  </head>
+  <body>
+    <div class="box">
+      <div class="app-location">
+        <h2>用户登录</h2>
+        <div class="line"></div>
+        <div class="location"></div>
+        <form>
+          <img src="../imgs/icon_user.png" alt="" />
+          <img class="two" src="../imgs/icon_password.png" alt="" />
+
+          <input
+            type="text"
+            class="text"
+            value="用户名/手机号"
+            onfocus="this.value = '';"
+            onblur="if (this.value == '') {this.value = '用户名/手机号';}"
+          />
+          <input
+            type="text"
+            value="密码"
+            onfocus="this.value = '',this.type='password';"
+            onblur="if (this.value == '') {this.value = '密码',this.type='text';}"
+          />
+          <div class="submit"><input type="submit" value="登录" /></div>
+          <div class="clear"></div>
+          <div class="new">
+            <h3><a href="#">忘记密码</a></h3>
+            <h4><a href="#">用户注册</a></h4>
+            <div class="clear"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>
